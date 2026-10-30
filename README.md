@@ -35,5 +35,7 @@ The system stores an image in the FPGA's internal memory, applies processing in 
 * **`VGA Controller`**: Hardware timing generator that produces industry-standard horizontal (`HSYNC`) and vertical (`VSYNC`) synchronization signals, blanking porch intervals, and coordinates `(X, Y)` for a 640×480 @ 60 Hz display output.
 <img width="813" height="462" alt="Screenshot 2026-10-30 171909" src="https://github.com/user-attachments/assets/67b07613-6ef5-4d4c-b1fb-5ffa5b78f15c" />
 
+## Result
+<img width="580" height="458" alt="test" src="https://github.com/user-attachments/assets/8238db8c-25ae-412e-98d1-ba2ddf339391" />
 
 
