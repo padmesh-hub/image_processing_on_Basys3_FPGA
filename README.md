@@ -5,6 +5,8 @@ This is the repository for the Image Processing on FPGA project, built on the Ba
 ## Project Overview
 
 The system stores an image in the FPGA's internal memory, applies processing in hardware, and sends the outcome to a VGA monitor.
+<img width="2720" height="1400" alt="image_streaming_uart_elaborated_design" src="https://github.com/user-attachments/assets/cd858253-50c2-4d04-81e2-d9b56389ea47" />
+
 
 ### Key Functionality
 
