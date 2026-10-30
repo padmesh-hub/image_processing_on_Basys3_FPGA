@@ -17,3 +17,7 @@ The system stores an image in the FPGA's internal memory, applies processing in 
 **Mode Control:** Physical switches on the board control what is shown. They select between the original image and the processed output.
 
 **Image Processing:** The processing logic runs on dedicated hardware and works on every pixel as it is read out for display, so the result appears on screen in real time.
+
+## Tools and Technologies
+<img width="807" height="330" alt="Screenshot 2026-10-30 170445" src="https://github.com/user-attachments/assets/3e0a71ee-d229-40fc-877f-89bd389d5bf6" />
+
