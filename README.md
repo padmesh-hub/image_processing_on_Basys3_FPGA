@@ -38,4 +38,6 @@ The system stores an image in the FPGA's internal memory, applies processing in 
 ## Result
 <img width="580" height="458" alt="test" src="https://github.com/user-attachments/assets/8238db8c-25ae-412e-98d1-ba2ddf339391" />
 
+## Utilization Report
+<img width="480" height="355" alt="Screenshot 2026-10-30 231930" src="https://github.com/user-attachments/assets/5e029a50-68ea-4426-8d2d-6059d4929036" />
 
