@@ -21,3 +21,13 @@ The system stores an image in the FPGA's internal memory, applies processing in 
 ## Tools and Technologies
 <img width="807" height="330" alt="Screenshot 2026-10-30 170445" src="https://github.com/user-attachments/assets/3e0a71ee-d229-40fc-877f-89bd389d5bf6" />
 
+## RTL Modules
+## RTL Architecture & Module Breakdown
+
+* **`UART_TOP`**: Top-level integration module instantiating the baud rate generator and receiver modules to establish asynchronous serial reception from the host/peripheral interface.
+* **`Baud_rate_generator`**: Frequency divider that divides the system clock down to match standard communication speeds (e.g., 9600 or 115200 baud), generating precise sampling ticks for data reception.
+* **`UART_Rx`**: Finite State Machine (FSM) based serial receiver that samples the incoming serial line, detects start and stop framing bits, and deserializes 8-bit payloads into parallel registers.
+* **`pipeline-Eight_to_twelve`**: Data format alignment and repacking pipeline that captures sequential 8-bit stream inputs and packs/downscales them into 12-bit parallel RGB444 color format words for display processing.
+* **`BRAM Memory_Block`**: Dual-port on-chip Block RAM IP serving as a shared video frame buffer—allowing asynchronous write access from the capture/serial clock domain and read access from the VGA display clock domain.
+* **`Address_Generator`**: Synchronous indexing unit that tracks write pointers during packet assembly and computes linear read addresses (`(Y * 320) + X`) synchronized to the raster scan timings.
+* **`VGA Controller`**: Hardware timing generator that produces industry-standard horizontal (`HSYNC`) and vertical (`VSYNC`) synchronization signals, blanking porch intervals, and coordinates `(X, Y)` for a 640×480 @ 60 Hz display output.
