@@ -33,5 +33,5 @@ The system stores an image in the FPGA's internal memory, applies processing in 
 * **`BRAM Memory_Block`**: Dual-port on-chip Block RAM IP serving as a shared video frame buffer—allowing asynchronous write access from the capture/serial clock domain and read access from the VGA display clock domain.
 * **`Address_Generator`**: Synchronous indexing unit that tracks write pointers during packet assembly and computes linear read addresses (`(Y * 320) + X`) synchronized to the raster scan timings.
 * **`VGA Controller`**: Hardware timing generator that produces industry-standard horizontal (`HSYNC`) and vertical (`VSYNC`) synchronization signals, blanking porch intervals, and coordinates `(X, Y)` for a 640×480 @ 60 Hz display output.
-* ![Uploading Screenshot 2026-10-30 171909.png…]()
+  ![Uploading Screenshot 2026-10-30 171909.png…]()
 
